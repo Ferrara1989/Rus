@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Wheel tur = new Wheel(3 );
-        tur.setNumberOfWheels(6);
-        System.out.println(tur.getNumberOfWheels());
+        Transmission red  = new Transmission("Автоматическая", 6);
+        red.setGearboxType("Автоматическая");
+        red.setNumberOfSteps(6);
+        System.out.println(red.getGearboxType());
+        System.out.println(red.getNumberOfSteps());
     }
 }
