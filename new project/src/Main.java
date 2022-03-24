@@ -1,7 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        Body open = new Body("Открытый");
-        open.setBodyType("Открытый");
-        System.out.println(open.getBodyType());
+       Motor speed = new Motor();
+       speed.setDisplacement(10);
+       speed.setBrand("BMW");
+       System.out.println(speed.getDisplacement());
+       System.out.println(speed.getBrand());
     }
 }
