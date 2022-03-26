@@ -17,10 +17,12 @@ public class Transmission {
     }
 
     public int getNumberOfSteps() {
+
         return numberOfSteps;
     }
 
     public void setNumberOfSteps(int numberOfSteps) {
+
         this.numberOfSteps = numberOfSteps;
     }
     public void print() {

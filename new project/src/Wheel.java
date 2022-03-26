@@ -1,5 +1,5 @@
 public class Wheel {
-    private int numberOfWheels = 0;
+    private int numberOfWheels = 16;
 
     public Wheel() {
 
@@ -18,6 +18,7 @@ public class Wheel {
 
         this.numberOfWheels = numberOfWheels;
     }
+
     public void print() {
         System.out.println("Номер колёс: " + numberOfWheels);
     }
