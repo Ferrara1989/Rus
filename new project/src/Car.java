@@ -3,11 +3,15 @@ public class Car {
     private Transmission gearboxType;
     private Body bodyType;
     private Motor motor;
+    private static int count = 0;
+    private static final String placeOfProduction = "Russia";
 
     public Car() {
 
+        count++;
     }
     public Car(Wheel wheel, Transmission gearboxType, Body bodyType, Motor motor) {
+        count++;
         this.wheel = wheel;
         this.gearboxType = gearboxType;
         this.bodyType = bodyType;
@@ -51,6 +55,14 @@ public class Car {
     public void setWheel(Wheel wheel) {
 
         this.wheel = wheel;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static String getPlaceOfProduction() {
+        return placeOfProduction;
     }
 
     public void print() {

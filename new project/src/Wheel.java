@@ -20,6 +20,7 @@ public class Wheel {
     }
 
     public void print() {
+
         System.out.println("Номер колёс: " + numberOfWheels);
     }
 }
